@@ -202,13 +202,13 @@ public class TodoAPITest {
         final String result = doGetRequest(todoId);
 
         // Expect a appropriate result message.
-        assertThat(result, is(String.format("Todo with the id  \"%s\" not found!", todoId)));
+        assertThat(result, is(String.format("Todo with the id \"%s\" not found!", todoId)));
 
         // Execute delete request
         doDeleteRequest(todoId);
 
         // Expect a appropriate result message.
-        assertThat(result, is(String.format("Todo with the id  \"%s\" not found!", todoId)));
+        assertThat(result, is(String.format("Todo with the id \"%s\" not found!", todoId)));
     }
 
     @Test
